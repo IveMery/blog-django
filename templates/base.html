@@ -1,0 +1,31 @@
+{% load static %}<!DOCTYPE html>
+
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Peralta" rel="stylesheet">
+    <link href="{% static 'css/app.css' %}" rel="stylesheet">
+    <title>Blog</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+</head>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% bootstrap_messages %}
+</head>
+
+<body class="p-3">
+    {% block nav %}
+    {% include 'nav.html' %}
+    {% endblock nav %}
+    {% block content %}
+    {% endblock content %}
+
+    {% block footer %}
+    {% endblock footer %}
+</body>
+
+</html>
